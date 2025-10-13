@@ -4,7 +4,7 @@
 actor user as "Organisation worker"
 
 rectangle "Application" {
-    usecase menu as "Select option from menu"
+    usecase menu as "Select report type - country, city, capital city, or population"
     usecase country as "Generate country report"
     usecase city as "Generate city report"
     usecase capital as "Generate capital city report"

@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+actor user as "Organisation worker"
+
+rectangle "Application" {
+    usecase scope as "User decides what to base report on - world, continent, or region"
+    usecase continent as "Continent selection"
+    usecase region as "Region selection"
+    usecase getN as "Top N countries (by population) entered by user"
+    usecase query as "Query created"
+    usecase report as "Report displayed"
+}
+
+user -- scope
+scope --> getN : world
+scope --> continent : continent
+continent --> getN
+scope --> region : region
+region --> getN
+getN --> query
+query --> report
+
+
+@enduml
