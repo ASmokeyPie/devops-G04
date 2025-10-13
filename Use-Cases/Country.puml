@@ -4,10 +4,10 @@
 actor user as "Organisation worker"
 
 rectangle "Application" {
-    usecase scope as "User decides what to base report on - world, continent, or region"
+    usecase scope as "User decides scope of report - world, continent, or region"
     usecase continent as "Continent selection"
     usecase region as "Region selection"
-    usecase getN as "Top N countries (by population) entered by user"
+    usecase getN as "N entered by user (Top N of countries by most population)"
     usecase query as "Query created"
     usecase report as "Report displayed"
 }
