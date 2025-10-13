@@ -5,7 +5,7 @@ actor user as "Organisation worker"
 
 rectangle "Application" {
     usecase scope as "User decides scope of report - world, continent, region, country, or district"
-    usecase other as "continent/region/country/district selected"
+    usecase other as "Name of continent/region/country/district selected"
     usecase getN as "N entered by user (Top N of cities by most population)"
     usecase query as "Query created"
     usecase report as "Report displayed"
