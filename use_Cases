@@ -1,23 +1,96 @@
-User Case: Select a dropdown menu option
-
-Actors: User
-
-Goal: Allow the user to view the options of the menu and select one
-
-Preconditions: User is on the page that contains a dropdown menu and the dropdown menu is loaded and visible.
-
-Postconditions: The system or website registers the selected option and updates the interface if an error occurs no option is selected and the system prompts to try again. 
-
-Main Flow: 
-1. The user navigates to the page containing the dropdown menu
-2. User clicks on the dropdown menu
-3. The system expands the menu and displays the list of avalible options
-4. User selects one option from the list 
-5. System registers the option and updates the interface of the user. 
-
 User Case: Generate Counrty Report 
 User Case: Generate City Report 
 User Case: Generate Capital City Report
 User Case: Generate Population Report 
+
+
+User Case: Generate Country Report
+
+Goal in Context: As an analyst in the goverment agency I want to produce a report on a specific country's key indicators such as economics, politics, demographics and trade, so I can support decison making, planning and strategic
+reporting within organisation.
+
+Scope: Organisation Research Department within Goverment
+
+Level: Primary Task
+
+Preconditions: The country name or code is known,
+The data sources such as economics, political and demographics are available and accessible on platforms like Internal Databases, World Bank API, IMF data.
+The report template or reporting format is pre-defined. 
+
+Success End Conditon: A country report is generated and available for review or distribution to stakeholders
+
+Failed End Condition: No report is produced due to missing data, system failure, or invalid output. 
+
+Primary Actor: Analyst/Research Officer
+
+Trigger: A request for country information is received from managemnt, policymakers or external partners.
+
+Main Success Scenario: 
+1. Stakeholder requests a country report for a given nation
+2. Analyst captures the country name and scope of report like economic, political or full overview
+3. Analyst retrieves relevant data from internal or external data sources. 
+4. Analyst analyses and validates the data for accuracy 
+5. System analyses or generates the country report and formats it.
+6. Analyst reviews and finalises the report.
+7. Analyst delivers the report to the requesting stekeholder. 
+
+
+Extensions: A country data might not be found, in that case the analyst informs the stakeholder that the
+country data is unavailable and may suggest an alternative source or timeframe. There might be incomplete 
+data in that case the analyst would produce a partial report. 
+
+Sub-Variations
+None
+
+SCHEDULE
+Due Date: Relaease 1.0 
+
+
+
+User Case: Generate City Report
+
+Goal in Context: As an Urban Data Analyst, I want to produce a report on a specific city's key indicators
+such as population, economy, infrastucture and development trends, so that I can support planning and
+organisational reporting related to that city.
+
+Scope: City-level data within the organisation area of interest like planning department and research 
+division. 
+
+Level: Primary Task
+
+Preconditions: The city name is known,
+The data sources such as census, municipal statistics are available and accessible on platforms like Internal Databases, World Bank API, IMF data.
+The report template or reporting format is pre-defined. 
+
+Success End Conditon: A city report is generated and available for use in decison-making or distribution 
+to stakeholders
+
+Failed End Condition: No report is produced due to missing data, system failure, or invalid output. 
+
+Primary Actor: Urban Data Analyst/Research Officer
+
+Trigger: A request for city information is received from managemnt, policymakers or external partners.
+
+Main Success Scenario: 
+1. Stakeholder requests a city report.
+2. Analyst captures the city name and scope of report.
+3. Analyst retrieves relevant data from internal or external data sources. 
+4. Analyst analyses and validates the data for accuracy 
+5. System analyses or generates the city report and formats it.
+6. Analyst reviews and finalises the report.
+7. Analyst delivers the report to the requesting stekeholder. 
+
+
+Extensions: A city data might not be found, in that case the analyst informs the stakeholder that the
+city data is unavailable and may suggest an alternative source or timeframe. There might be incomplete 
+data in that case the analyst would produce a partial report. 
+
+Sub-Variations
+None
+
+SCHEDULE
+Due Date: Relaease 1.0 
+
+
 
 
