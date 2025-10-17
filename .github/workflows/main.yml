@@ -3,7 +3,7 @@ on: push
 
 jobs:
   build:
-    name: Hello world action
+    name: Build and start using docker-compose
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
