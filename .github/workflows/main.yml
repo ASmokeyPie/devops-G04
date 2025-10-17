@@ -18,4 +18,4 @@ jobs:
           mvn package -DskipTests
           docker compose up --abort-on-container-exit
       - name: view logs
-        run: docker logs sem-quick-cw-app-1
+        run: docker compose logs
